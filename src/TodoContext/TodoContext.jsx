@@ -16,6 +16,15 @@ function TodoProvider(props) {
     return !!itemText.includes(searchText);
   });
 
+  const addTodo = (text) => {
+    const newTodo = [...todos];
+    newTodo.push({
+      completed: false,
+      text,
+    });
+    saveTodo(newTodo);
+  };
+
   const onDelete = (text) => {
     let filteredItem = todos.filter((item) => item.text !== text);
     saveTodo(filteredItem);
@@ -35,7 +44,20 @@ function TodoProvider(props) {
 
   return (
     <TodoContext.Provider
-      value={{ totalTodo, completedTodos, seachValue, setSearchValue, alreadyTodo, onComplete, onDelete, loading, error, openModal, setOpenModal }}>
+      value={{
+        totalTodo,
+        completedTodos,
+        seachValue,
+        setSearchValue,
+        alreadyTodo,
+        addTodo,
+        onComplete,
+        onDelete,
+        loading,
+        error,
+        openModal,
+        setOpenModal,
+      }}>
       {props.children}
     </TodoContext.Provider>
   );
