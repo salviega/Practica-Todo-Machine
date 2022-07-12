@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Practica-Todo-Machine/static/css/main.407365c5.css",
+    "main.js": "/Practica-Todo-Machine/static/js/main.6b35a0f7.js",
+    "index.html": "/Practica-Todo-Machine/index.html",
+    "main.407365c5.css.map": "/Practica-Todo-Machine/static/css/main.407365c5.css.map",
+    "main.6b35a0f7.js.map": "/Practica-Todo-Machine/static/js/main.6b35a0f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.407365c5.css",
+    "static/js/main.6b35a0f7.js"
+  ]
+}
